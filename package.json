@@ -10,11 +10,25 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "~44.0.0",
+    "@react-navigation/bottom-tabs": "^6.2.0",
+    "@react-navigation/drawer": "^6.3.1",
+    "@react-navigation/material-bottom-tabs": "^6.1.1",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/stack": "^6.1.1",
+    "expo": "^44.0.0",
+    "expo-font": "^10.0.5",
     "expo-status-bar": "~1.2.0",
+    "native-base": "^2.8.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-event-listeners": "^1.0.7",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-paper": "^4.11.2",
+    "react-native-qrcode-svg": "^6.1.2",
+    "react-native-reanimated": "^1.13.4",
+    "react-native-safe-area-view": "github:react-native-community/react-native-safe-area-view",
+    "react-native-vector-icons": "^9.1.0",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
