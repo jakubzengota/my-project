@@ -13,7 +13,7 @@ import { set } from 'react-native-reanimated';
 
 const Drawer = createDrawerNavigator();
 
-//---------------------------------------HOME SCREEN---------------------------------------\\
+//--------------------------------------HOME SCREEN---------------------------------------\\
 function HomeScreen({navigation}){
   const [qrValue, setQrValue] = useState();
   const [inputText, setInputText] = useState('');
