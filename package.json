@@ -1,6 +1,6 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
+  "name": "Business Card",
+  "version": "3.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -10,14 +10,17 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/roboto": "^0.2.2",
     "@react-navigation/bottom-tabs": "^6.2.0",
     "@react-navigation/drawer": "^6.3.1",
     "@react-navigation/material-bottom-tabs": "^6.1.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/stack": "^6.1.1",
+    "axios": "^0.26.1",
     "expo": "^44.0.0",
     "expo-font": "^10.0.5",
     "expo-status-bar": "~1.2.0",
+    "expo-updates": "^0.11.6",
     "native-base": "^2.8.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -30,6 +33,14 @@
     "react-native-safe-area-view": "github:react-native-community/react-native-safe-area-view",
     "react-native-vector-icons": "^9.1.0",
     "react-native-web": "0.17.1"
+  },
+  "android": {
+    "versionCode": 1
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
