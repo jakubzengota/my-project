@@ -12,7 +12,7 @@ function Sidebar({progress,...props}){
         inputRange: [0, 1],
         outputRange: [0, 0],
     });
-    
+
     return (
         <Container>
             <Header style={{backgroundColor: colors.card, borderBottomWidth: 0}}>
@@ -30,19 +30,19 @@ function Sidebar({progress,...props}){
                 <DrawerContentScrollView {...props}>
                     <Animated.View style={{transform: [{translateX}]}}>
                         <DrawerItemList {...props} />
-                    <DrawerItem 
-                        label="Rate Us" 
+                    {/* <DrawerItem 
+                        label="O aplikacji" 
                         icon={({color, size}) => ( 
-                            <Icon name="star" style={{fontSize: size, color: color}}/>
+                            <Icon name="grid" style={{fontSize: size, color: color}}/>
                         )}
                         onPress={() => props.navigation.navigate('Home')}
-                    />
+                    /> */}
                     </Animated.View>
                 </DrawerContentScrollView>
                 <List>
                     <ListItem>
                         <Body>
-                            <Text style={{color: colors.text}}>Dark Mode</Text>
+                            <Text style={{color: colors.text, fontSize: 15}}>Dark Mode</Text>
                         </Body>
                         <Right>
                             <Switch value={darkMode} onValueChange={(val) =>{
