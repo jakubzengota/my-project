@@ -71,14 +71,14 @@ function HomeScreen({ navigation, route, props }) {
     }
     setFirstRun(false);
     if (route.params?.input) {
-      axios
-        .get(
-          "https://info.porta.com.pl/ewizytowka/vcard/j/" + route.params.input +".json",{
-            headers: {
-              Cookie: "aToken=3d5f441a-17cd-4ab4-a163-2d0df47591fa"
-            }
+      axios.get(
+        "https://info.porta.com.pl/ewizytowka/vcard/j/" + route.params.input + ".json",
+        {
+          headers: {
+            Authorization: "Bearer 3d5f441a-17cd-4ab4-a163-2d0df47591fa"
           }
-        )
+        }
+      )
         .then(
           (res) => new Promise((resolve) => setTimeout(() => resolve(res), 500))
         )
@@ -228,7 +228,7 @@ function ProfileScreen({ navigation }) {
       axios
         .get("https://info.porta.com.pl/ewizytowka/vcard/j/" + inputText + ".json",{
           headers: {
-            Cookie: "aToken=3d5f441a-17cd-4ab4-a163-2d0df47591fa"
+            Authorization: "Bearer 3d5f441a-17cd-4ab4-a163-2d0df47591fa"
           }
         })
         .then(
