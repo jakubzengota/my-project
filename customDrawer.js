@@ -1,14 +1,14 @@
-import { DrawerContentScrollView, DrawerItemList, DrawerItem } from "@react-navigation/drawer";
+import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer";
 import React, { useState } from "react";
 import {DrawerActions, useTheme} from '@react-navigation/native'
-import {Icon, Container, View, Header, Footer, Content, Button, Right, ListItem, Left, List, Body, Text, Switch} from 'native-base';
+import {Icon, Container, View, Header, Footer, Content, Button, Right, ListItem, List, Body, Text, Switch} from 'native-base';
 import Animated from 'react-native-reanimated';
 import { EventRegister  } from 'react-native-event-listeners';
 
 function Sidebar({progress,...props}){
     const {colors} = useTheme();
     const [darkMode, setDarkMode] = useState(false)
-    const translateX = Animated.interpolate(progress, {
+    const translateX = Animated.interpolateNode(progress, {
         inputRange: [0, 1],
         outputRange: [0, 0],
     });

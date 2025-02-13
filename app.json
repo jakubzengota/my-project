@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "e-card",
-    "slug": "e-card",
-    "version": "1.0.0",
+    "name": "portabusinesscardpkd",
+    "slug": "portabusinesscardpkd",
+    "version": "6.1.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,11 +20,13 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "host.exp.exponent"
+      "package": "com.portabusinesscardPKD"
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"
